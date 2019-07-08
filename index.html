@@ -680,7 +680,7 @@
 							pm.address_components.zip = address_component.long_name;
 						}
 						if (types[j] === 'postal_code_suffix') {
-							pm.address_components.zip = address_component.long_name;
+							pm.address_components.zip += "-" + address_component.long_name;
 						}
 						if (types[j] === 'sublocality_level_1') {
 							pm.address_components.borough = address_component.long_name;
