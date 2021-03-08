@@ -915,8 +915,8 @@
 						{
 						if ( !g_map )
 							{
-								var longitude = parseFloat ( document.getElementById('bmlt_tools_address_long').value );
-								var latitude = parseFloat ( document.getElementById('bmlt_tools_address_lat').value );
+								var longitude = parseFloat ( document.getElementById('bmlt_tools_lookup_address_long').innerHTML );
+								var latitude = parseFloat ( document.getElementById('bmlt_tools_lookup_address_lat').innerHTML );
 
 								g_map = new google.maps.Map(document.getElementById('bmlt_tools_map_div'), {
 									center: {lat: latitude, lng: longitude},
